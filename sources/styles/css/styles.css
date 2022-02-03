@@ -1,0 +1,251 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Rowdies";
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem; 
+    background-color: gray;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1090px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  li {
+    font-size: 1.5;
+  }
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.9318102240896359) 0%, rgba(45,44,44,0.9009978991596639) 100%);
+    color: whitesmoke;
+    z-index: 99;
+    height: 8vh;
+}
+
+#logo {
+    font-family: "Press Start 2P";
+    margin-left: 2rem;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+
+#navlist {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 2rem;
+}
+
+#navlist a {
+    color: whitesmoke;
+    font-size: 3rem;
+    padding: .7rem 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-family: "Rowdies";
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  height: 0.3rem;
+  width: 3rem;
+  margin: 0.5rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  transition: all 0.3 ease;
+}
+
+@media screen and (max-width: 1395px) {
+  #navlist {
+    width: 70%;
+  }
+  #navlist a {
+    font-size: 2rem;
+  }
+  #logo {
+    font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 865px) {
+  #navlist {
+    width: 100%;
+  }
+
+  .navlist {
+    position: absolute;
+    right: 0px;
+    height: 20vh;
+    width: 100%;
+    top: 8vh;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.9318102240896359) 0%, rgba(45,44,44,0.9009978991596639) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-150%);
+    transition: transform 0.5s ease-in;
+    z-index: -1;
+  }
+  
+  #navlist li {
+    opacity: 1;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    transform: translateY(0%);
+  } 
+}
+
+/* main styles */
+
+.background {
+  display: block;
+  top: 7rem;
+  left: 0;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.main {
+  text-align: center;
+  margin: 2rem;
+  height: 65vh;
+  border-radius: 10px;
+  font-family: "Press Start 2P";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main h1 {
+  margin-bottom: 2rem;
+}
+
+.main p {
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 865px) {
+  .main{
+    height: 30vh;
+  }
+}
+/* about / location styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 25vw;
+  height: 20vh;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 12px 32px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 1090px) {
+  .card ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80vw;
+  }
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.9318102240896359) 0%, rgba(45,44,44,0.9009978991596639) 100%);
+    color: whitesmoke;
+    height: 5vh;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+footer,
+footer p {
+  z-index: 99;
+}
+
+.link:link,
+.link:visited {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 865px) {
+  footer p {
+    font-size: 1.2rem;
+  }
+  footer .desktop {
+    display: none;
+  }
+}
