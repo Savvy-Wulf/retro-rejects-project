@@ -19,7 +19,7 @@ body {
     flex-direction: column;
 }
 
-@media screen and (max-width: 1090px) {
+@media only screen and (max-width: 1090px) {
   h2 {
     font-size: 1.9rem;
   }
@@ -87,7 +87,7 @@ nav ul li a:hover {
   transition: all 0.3 ease;
 }
 
-@media screen and (max-width: 1395px) {
+@media only screen and (max-width: 1395px) {
   #navlist {
     width: 70%;
   }
@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 }
 
-@media screen and (max-width: 865px) {
+@media only screen and (max-width: 865px) {
   #navlist {
     width: 100%;
   }
@@ -165,7 +165,7 @@ nav ul li a:hover {
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 865px) {
+@media only screen and (max-width: 865px) {
   .main{
     height: 30vh;
   }
@@ -194,7 +194,7 @@ nav ul li a:hover {
   box-shadow: 0 12px 32px 0 rgba(0,0,0,0.2);
 }
 
-@media screen and (max-width: 1090px) {
+@media only screen and (max-width: 1090px) {
   .card ul li {
     font-size: 1.5rem;
   }
@@ -241,7 +241,7 @@ footer p {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 865px) {
+@media only screen and (max-width: 865px) {
   footer p {
     font-size: 1.2rem;
   }
